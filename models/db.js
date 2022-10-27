@@ -4,10 +4,10 @@ import dbConfig from "../config/db.config.js";
 // create connection
 const connection = mysql.createConnection({
   port: "3306",
-  host: "localhost",
-  user: "root",
-  password: "vasu1234",
-  database: "newdb",
+  host: dbConfig.HOST,
+  user: dbConfig.USER,
+  password: dbConfig.PASSWORD,
+  database: dbConfig.DB,
 });
 
 // open the MySQL connection
